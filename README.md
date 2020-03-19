@@ -1,6 +1,6 @@
 # Vala and web assembly
 
-It appears as though its possible to generate web assembly using the vala compiler. Unfortunately, `glib` doesn't compile out of the box for some very minor reasons. This repo contains working glib headers and various example of testing out the capabilities of vala.
+It appears as though its possible to generate web assembly using the [vala compiler](https://wiki.gnome.org/Projects/Vala). Unfortunately, `glib` doesn't compile out of the box for some very minor reasons. This repo contains working glib headers and various example of testing out the capabilities of vala.
 
 Changes to glib:
 * removed gthreads header
