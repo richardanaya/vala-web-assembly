@@ -1,0 +1,7 @@
+<body></body>
+<script>
+WebAssembly.instantiateStreaming(fetch('example.wasm'), {})
+.then(obj => {
+        let r = obj.instance.exports.add(20,22)
+        document.body.innerHTML += r;
+    });</script>

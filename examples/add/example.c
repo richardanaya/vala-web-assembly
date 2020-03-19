@@ -55,7 +55,7 @@ gint calculator_add (gint a,
 Calculator* calculator_new (void);
 Calculator* calculator_construct (GType object_type);
 static void calculator_finalize (Calculator * obj);
-gint __attribute__((visibility("default"))) boo (gint a,
+gint __attribute__((visibility("default"))) add (gint a,
                                                  gint b);
 
 gint
@@ -273,7 +273,7 @@ calculator_unref (gpointer instance)
 }
 
 gint
-__attribute__((visibility("default"))) boo (gint a,
+__attribute__((visibility("default"))) add (gint a,
                                             gint b)
 {
 	gint result = 0;
