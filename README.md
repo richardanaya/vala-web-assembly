@@ -1,6 +1,6 @@
 # Vala and web assembly
 
-It appears as though its possible to generate web assembly using the vala compiler. Unfortunately, `glib` doesn't compile out of the box for some very minor reasons. This repo contains a working glib.
+It appears as though its possible to generate web assembly using the vala compiler. Unfortunately, `glib` doesn't compile out of the box for some very minor reasons. This repo contains a working glib and various example of testing out the capabilities of vala.
 
 dependencies:
 ```
