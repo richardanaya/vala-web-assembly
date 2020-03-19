@@ -2,12 +2,12 @@
 
 It appears as though its possible to generate web assembly using the vala compiler. Unfortunately, `glib` doesn't compile out of the box for some very minor reasons. This repo contains a working glib and various example of testing out the capabilities of vala.
 
-dependencies:
+## dependencies
 ```
 sudo dnf install clang llvm lld vala glib-devel
 ```
 
-Example:
+## example
 ```vala
 // classes work like normal!
 class Calculator {
