@@ -3,13 +3,15 @@
 
 #include <glib.h>
 
-gint __attribute__((visibility("default"))) boo (void);
+gint __attribute__((visibility("default"))) boo (gint a,
+                                                 gint b);
 
 gint
-__attribute__((visibility("default"))) boo (void)
+__attribute__((visibility("default"))) boo (gint a,
+                                            gint b)
 {
 	gint result = 0;
-	result = 42;
+	result = a + b;
 	return result;
 }
 
