@@ -17,9 +17,11 @@ class Calculator {
 }
 
 // Entry functions need some special sugar to expose them properly
-[CCode (cname = "__attribute__((visibility(\"default\"))) boo")]
+[CCode (cname = "__attribute__((visibility(\"default\"))) add")]
 public int add(int a, int b){
 	return Calculator.add(a,b);
 }
 
 ```
+
+See it working [here](https://richardanaya.github.io/vala-web-assembly/examples/add/index.html)
