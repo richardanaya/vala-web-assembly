@@ -52,7 +52,7 @@ public int _main(){
 }
 ```
 
-```javascript
+```html
 <script src="https://cdn.jsdelivr.net/gh/richardanaya/js_ffi@latest/js_ffi.js"></script>
 <script>js_ffi.run("example.wasm");</script>
 ```
