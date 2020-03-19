@@ -29,3 +29,29 @@ public int add(int a, int b){
 ```
 
 See it working [here](https://richardanaya.github.io/vala-web-assembly/examples/add/index.html)
+
+
+## hello world to browser
+
+I utilize a tech called [`js_ffi`](https://github.com/richardanaya/js_ffi) which can communicate with browser DOM
+
+```vala
+extern float jsffiregister(char* msg);
+extern float jsfficall1(float context,float fn,float arg_1_type,float arg_1_value);
+
+const float JS_UNDEFINED = 0.0f;
+const float TYPE_STRING = 2.0f;
+
+// Entry functions need some special sugar to expose them properly
+[CCode (cname = "__attribute__((visibility(\"default\"))) main")]
+public int _main(){
+	var log = jsffiregister("window.alert");
+	jsfficall1(0,log,TYPE_STRING,(float)(int)"Hello World!");
+	return 0;
+}
+```
+
+```javascript
+<script src="https://cdn.jsdelivr.net/gh/richardanaya/js_ffi@latest/js_ffi.js"></script>
+<script>js_ffi.run("example.wasm");</script>
+```
