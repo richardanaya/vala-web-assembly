@@ -2,6 +2,10 @@
 
 It appears as though its possible to generate web assembly using the vala compiler. Unfortunately, `glib` doesn't compile out of the box for some very minor reasons. This repo contains a working glib and various example of testing out the capabilities of vala.
 
+Changes to glib:
+* removed gthreads header
+* disabled an assertion
+
 ## dependencies
 ```
 sudo dnf install clang llvm lld vala glib-devel
