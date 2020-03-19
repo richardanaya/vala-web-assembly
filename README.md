@@ -56,3 +56,5 @@ public int _main(){
 <script src="https://cdn.jsdelivr.net/gh/richardanaya/js_ffi@latest/js_ffi.js"></script>
 <script>js_ffi.run("example.wasm");</script>
 ```
+
+See it working [here](https://richardanaya.github.io/vala-web-assembly/examples/helloworld/index.html)
