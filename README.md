@@ -45,10 +45,9 @@ const float TYPE_STRING = 2.0f;
 // Entry functions need some special sugar to expose them properly
 // vala has some weird logic around functions named main so we prefix _
 [CCode (cname = "__attribute__((visibility(\"default\"))) main")]
-public int _main(){
+public void _main(){
 	var log = jsffiregister("window.alert");
 	jsfficall1(JS_UNDEFINED,log,TYPE_STRING,(float)(int)"Hello World!");
-	return 0;
 }
 ```
 
