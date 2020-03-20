@@ -268,7 +268,9 @@ void	_g_log_fallback_handler	(const gchar   *log_domain,
 GLIB_AVAILABLE_IN_ALL
 void g_return_if_fail_warning (const char *log_domain,
 			       const char *pretty_function,
-			       const char *expression) G_ANALYZER_NORETURN;
+			       const char *expression) G_ANALYZER_NORETURN 
+
+
 GLIB_AVAILABLE_IN_ALL
 void g_warn_message           (const char     *domain,
                                const char     *file,

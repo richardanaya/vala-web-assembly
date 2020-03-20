@@ -5,6 +5,7 @@ It appears as though its possible to generate web assembly using the [vala compi
 Changes to glib:
 * removed gthreads header
 * disabled an assertion
+* turn off G_ANALYZER_NORETURN
 
 ## dependencies
 ```

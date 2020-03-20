@@ -725,7 +725,7 @@
 #define G_ANALYZER_NORETURN __attribute__((analyzer_noreturn))
 #else
 #define G_ANALYZER_ANALYZING 0
-#define G_ANALYZER_NORETURN
+#define G_ANALYZER_NORETURN {}
 #endif
 
 #define G_STRINGIFY(macro_or_string)	G_STRINGIFY_ARG (macro_or_string)
